@@ -1,5 +1,6 @@
 from bottle import *
 from sys import argv
+from beaker.middleware import SessionMiddleware
 
 @route('/')
 def index():

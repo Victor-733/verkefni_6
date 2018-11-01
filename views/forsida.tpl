@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,26 +9,47 @@
 </head>
 <body>
     <header>
-        <h3>Verkefni 6</h3>
+        <h1>Verkefni 6</h1>
     </header>
+    <div class="kerra">
+        <img src="/static/kerra.svg" alt="kerra">
+    </div>
     <div class="container">
         <div>
-            <img src="/static/glasses.jpg" alt="glasses">
+            <p>Gamer Glasses</p>
+            <a href="/chart/0/">
+            <img src="/static/glasses.jpg" alt="glasses"></a>
+            <p>420 kr.</p>
         </div>
         <div>
-            <img src="/static/cap.jpg" alt="glasses">
+            <p>Gamer Cap</p>
+            <a href="/chart/1/">
+            <img src="/static/cap.jpg" alt="glasses"></a>
+            <p>420 kr.</p>
         </div>
         <div>
-            <img src="/static/gloves.jpg" alt="glasses">
+            <p>Gamer Gloves</p>
+            <a href="/chart/2/">
+            <img src="/static/gloves.jpg" alt="glasses"></a>
+            <p>420 kr.</p>
         </div>
         <div>
-            <img src="/static/hoodie.jpg" alt="glasses">
+            <p>Gamer Hoodie</p>
+            <a href="/chart/3/">
+            <img src="/static/hoodie.jpg" alt="glasses"></a>
+            <p>420 kr.</p>
         </div>
         <div>
-            <img src="/static/pants.jpg" alt="glasses">
+            <p>Gamer Pants</p>
+            <a href="/chart/4/">
+            <img src="/static/pants.jpg" alt="glasses"></a>
+            <p>420 kr.</p>
         </div>
         <div>
-            <img src="/static/shoes.jpg" alt="glasses">
+            <p>Gamer Shoes</p>
+            <a href="chart/5/">
+            <img src="/static/shoes.jpg" alt="glasses"></a>
+            <p>420 kr.</p>
         </div>
     </div>
     <footer>

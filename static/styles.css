@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+h3, p {
+    margin: 0;
+}
+.container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    max-width: 60em;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-style: italic;
+}
+img {
+    padding: 1em;
+    max-width: 15em;
+}
+header {
+    background-color: red;
+    padding: 2em;
+    color: white;
+    text-align: center;
+}
+footer {
+    background-color: red;
+    padding: 2.5em;
+    color: white;
+    text-align: center;
+}
+.kerra {
+    width: 4em;
+    position: absolute;
+    right: 3em;
+    top: 2em;
+}
