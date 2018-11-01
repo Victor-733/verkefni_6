@@ -51,5 +51,8 @@ def eyda(id):
     bs.delete()
     bs.save
     redirect("/chart")
-
-run(host="0.0.0.0", port=argv[1], debug=True, reloader=True)
+    
+try:
+    run(host="0.0.0.0", port=argv[1], debug=True, reloader=True)
+except:
+    run(debug=True, app=app)

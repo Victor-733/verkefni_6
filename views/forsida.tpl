@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/styles.css" />
 </head>
 <body>
-    % from beaker.middleware import SessionMiddleware
+    % from bottle import *
     % from beaker.middleware import SessionMiddleware
     % bs = request.environ.get("beaker.session")
     <header>
