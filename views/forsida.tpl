@@ -1,4 +1,3 @@
-% from beaker.middleware import SessionMiddleware
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,13 +6,12 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/static/styles.css" />
 </head>
 <body>
+    % from beaker.middleware import SessionMiddleware
+    % from beaker.middleware import SessionMiddleware
+    % bs = request.environ.get("beaker.session")
     <header>
         <h1>Verkefni 6</h1>
     </header>
-    <div class="kerra">
-        <a href="/chart">
-        <img src="/static/kerra.svg" alt="kerra"></a>
-    </div>
     <div class="container">
         <div>
             <p>Gamer Glasses</p>
@@ -24,34 +22,51 @@
         <div>
             <p>Gamer Cap</p>
             <a href="/chart/1">
-            <img src="/static/cap.jpg" alt="glasses"></a>
+            <img src="/static/cap.jpg" alt="Cap"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Gloves</p>
             <a href="/chart/2">
-            <img src="/static/gloves.jpg" alt="glasses"></a>
+            <img src="/static/gloves.jpg" alt="Gloves"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Hoodie</p>
             <a href="/chart/3">
-            <img src="/static/hoodie.jpg" alt="glasses"></a>
+            <img src="/static/hoodie.jpg" alt="Hoodie"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Pants</p>
             <a href="/chart/4">
-            <img src="/static/pants.jpg" alt="glasses"></a>
+            <img src="/static/pants.jpg" alt="Pants"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Shoes</p>
             <a href="chart/5">
-            <img src="/static/shoes.jpg" alt="glasses"></a>
+            <img src="/static/shoes.jpg" alt="Shoes"></a>
             <p>420 kr.</p>
         </div>
     </div>
+    <%
+        from bottle import *
+        from beaker.middleware import SessionMiddleware
+        bs = request.environ.get('beaker.session')
+        cnt = 0
+        for i in range(6):
+            if bs.get(str(i)):
+                cnt += 1
+                end
+            end
+    %>
+    <aside class="kerra">
+            ( {{cnt}} )
+            <a href="/chart" title="Skoða körfu">
+            <img src="/static/kerra.svg" alt="kerra"></a>
+    </aside>
+
     <footer>
         <p>Victor Wahid Ívarsson &copy; 2018</p>
     </footer>

@@ -1,6 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Karfa</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/static/styles.css" />
+</head>
+<body>
 % from bottle import *
 % from beaker.middleware import SessionMiddleware
 % bs = request.environ.get('beaker.session')
+% empty = True
 <h2>Karfan</h2>
 
 % for i in range(6):
@@ -35,3 +44,5 @@
             </tr>
     </table>
 % end
+</body>
+</html>
