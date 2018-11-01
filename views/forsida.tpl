@@ -1,5 +1,4 @@
-
-
+% from beaker.middleware import SessionMiddleware
 <!DOCTYPE html>
 <html>
 <head>
