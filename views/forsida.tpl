@@ -11,42 +11,43 @@
         <h1>Verkefni 6</h1>
     </header>
     <div class="kerra">
-        <img src="/static/kerra.svg" alt="kerra">
+        <a href="/chart">
+        <img src="/static/kerra.svg" alt="kerra"></a>
     </div>
     <div class="container">
         <div>
             <p>Gamer Glasses</p>
-            <a href="/chart/0/">
+            <a href="/chart/0">
             <img src="/static/glasses.jpg" alt="glasses"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Cap</p>
-            <a href="/chart/1/">
+            <a href="/chart/1">
             <img src="/static/cap.jpg" alt="glasses"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Gloves</p>
-            <a href="/chart/2/">
+            <a href="/chart/2">
             <img src="/static/gloves.jpg" alt="glasses"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Hoodie</p>
-            <a href="/chart/3/">
+            <a href="/chart/3">
             <img src="/static/hoodie.jpg" alt="glasses"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Pants</p>
-            <a href="/chart/4/">
+            <a href="/chart/4">
             <img src="/static/pants.jpg" alt="glasses"></a>
             <p>420 kr.</p>
         </div>
         <div>
             <p>Gamer Shoes</p>
-            <a href="chart/5/">
+            <a href="chart/5">
             <img src="/static/shoes.jpg" alt="glasses"></a>
             <p>420 kr.</p>
         </div>
