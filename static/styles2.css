@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-family: Helvetica;
+}
+header {
+    display: flex;
+    background-color: red;
+    padding: 3em;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+footer {
+    background-color: red;
+    padding: 2em;
+    color: white;
+    text-align: center;
+}
+.container {
+    display: flex;
+    max-width: 50em;
+    margin: auto;
+    justify-content: center;
+}
+td {
+    padding: 1em;
+}
+table {
+    margin: 2em;
+}
+.til-baka {
+    background-color: white;
+    padding: 1em;
+    border-radius: 5em;
+}
