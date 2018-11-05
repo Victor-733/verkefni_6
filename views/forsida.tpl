@@ -22,7 +22,7 @@
         <div>
             <p>Gamer Cap</p>
             <a href="/chart/1">
-            <img src="/static/Cap.jpg" alt="Cap"></a>
+            <img src="/static/cap.jpg" alt="Cap"></a>
             <p>420 kr.</p>
         </div>
         <div>
