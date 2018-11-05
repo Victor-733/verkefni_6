@@ -53,7 +53,7 @@
     <%
         from bottle import *
         from beaker.middleware import SessionMiddleware
-        bs = request.environ.get('beaker.session')
+        bs = request.environ.get("beaker.session")
         cnt = 0
         for i in range(6):
             if bs.get(str(i)):
@@ -62,7 +62,7 @@
             end
     %>
     <aside class="kerra">
-            ( {{cnt}} )
+            ( {{ cnt }} )
             <a href="/chart" title="Skoða körfu">
             <img src="/static/kerra.svg" alt="kerra"></a>
     </aside>

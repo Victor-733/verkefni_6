@@ -1,6 +1,7 @@
 from bottle import *
 from sys import argv
 from beaker.middleware import SessionMiddleware
+bs = request.environ.get('beaker.session')
 
 session_opts = {
     "session.type": "file",
@@ -46,7 +47,7 @@ def eyda(id):
     redirect("/chart")
 
 @route("/delall")
-def eyda(id):
+def eyda():
     bs = request.environ.get('beaker.session')
     bs.delete()
     bs.save
