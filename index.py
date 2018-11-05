@@ -1,7 +1,6 @@
 from bottle import *
 from sys import argv
 from beaker.middleware import SessionMiddleware
-bs = request.environ.get('beaker.session')
 
 session_opts = {
     "session.type": "file",
@@ -52,8 +51,6 @@ def eyda():
     bs.delete()
     bs.save
     redirect("/chart")
-    
+
 try:
-    run(host="0.0.0.0", port=argv[1], debug=True, reloader=True)
-except:
-    run(debug=True, app=app)
+    run(app=app, host="0.0.0.0", port=argv[1], debug=True)

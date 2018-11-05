@@ -51,9 +51,6 @@
         </div>
     </div>
     <%
-        from bottle import *
-        from beaker.middleware import SessionMiddleware
-        bs = request.environ.get("beaker.session")
         cnt = 0
         for i in range(6):
             if bs.get(str(i)):
