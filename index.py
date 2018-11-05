@@ -52,5 +52,4 @@ def eyda():
     bs.save
     redirect("/chart")
 
-try:
-    run(app=app, host="0.0.0.0", port=argv[1], debug=True)
+run(app=app, host="0.0.0.0", port=argv[1], debug=True)
